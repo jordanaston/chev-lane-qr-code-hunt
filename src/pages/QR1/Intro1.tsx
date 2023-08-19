@@ -8,7 +8,7 @@ import "../../Background.css";
 const Intro1: React.FC = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed"
+      className="flex flex-col items-center justify-center h-screen bg-center bg-cover bg-fixed"
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
       <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
