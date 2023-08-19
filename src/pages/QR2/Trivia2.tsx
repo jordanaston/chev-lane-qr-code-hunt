@@ -24,10 +24,10 @@ const Trivia2: React.FC = () => {
         <p className="text-white">What does green-washing refer to?</p>
       </TextBox>
 
-      <RadioOptions options={answers} name="answer" />
+      <RadioOptions options={answers} name="answer"/>
 
       <p className="text-white uppercase mt-8 text-xl border border-white p-1 px-2">
-        <Link to="/trivia2" className="inline-block">
+        <Link to="/trivia3" className="inline-block">
           SUBMIT
         </Link>
       </p>
