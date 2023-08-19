@@ -4,6 +4,14 @@ import Intro2 from "./pages/QR1/Intro2";
 import Trivia1 from "./pages/QR2/Trivia1";
 import Trivia2 from "./pages/QR2/Trivia2";
 import Trivia3 from "./pages/QR2/Trivia3";
+import Trivia4 from "./pages/QR2/Trivia4";
+import Trivia5 from "./pages/QR2/Trivia5";
+import Trivia6 from "./pages/QR2/Trivia6";
+import Trivia7 from "./pages/QR2/Trivia7";
+import Trivia8 from "./pages/QR2/Trivia8";
+import Trivia9 from "./pages/QR2/Trivia9";
+import Trivia10 from "./pages/QR2/Trivia10";
+import Trivia11 from "./pages/QR2/Trivia11";
 
 function App() {
   return (
@@ -15,6 +23,14 @@ function App() {
           <Route path="/trivia1" element={<Trivia1 />} />
           <Route path="/trivia2" element={<Trivia2 />} />
           <Route path="/trivia3" element={<Trivia3 />} />
+          <Route path="/trivia4" element={<Trivia4 />} />
+          <Route path="/trivia5" element={<Trivia5 />} />
+          <Route path="/trivia6" element={<Trivia6 />} />
+          <Route path="/trivia7" element={<Trivia7 />} />
+          <Route path="/trivia8" element={<Trivia8 />} />
+          <Route path="/trivia9" element={<Trivia9 />} />
+          <Route path="/trivia10" element={<Trivia10 />} />
+          <Route path="/trivia11" element={<Trivia11 />} />
           <Route
             path="*"
             element={

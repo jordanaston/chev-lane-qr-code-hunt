@@ -7,7 +7,7 @@ interface Props {
 
 const RadioOptions: React.FC<Props> = ({ options, name }) => {
   return (
-    <div className="w-full max-w-lg text-white pl-7 pr-7">
+    <div className="w-full max-w-lg text-white pl-2 pr-6">
       {options.map((optionText, idx) => (
         <label key={idx} className="block mt-3">
           <div className="flex items-start">

@@ -35,7 +35,7 @@ const Trivia3: React.FC = () => {
       </TextBox>
 
       <p className="text-white uppercase mt-4 text-xl border border-white p-1 px-2">
-        <Link to="/trivia3" className="inline-block">
+        <Link to="/trivia4" className="inline-block">
           NEXT
         </Link>
       </p>
