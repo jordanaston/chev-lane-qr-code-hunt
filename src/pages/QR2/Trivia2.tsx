@@ -9,7 +9,7 @@ const Trivia2: React.FC = () => {
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono"
       style={{ backgroundImage: `url(${TriviaBackground})` }}
     >
-      <Link to="/trivia1" className="text-customGray font-mono pt-2">
+      <Link to="/trivia1" className="text-customGray pt-2">
         ← BACK
       </Link>
       <TextBox>
