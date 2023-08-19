@@ -14,7 +14,7 @@ function App() {
             path="*"
             element={
               <div className="flex flex-grow justify-center font-mono text-white items-center">
-                wrong url silly!
+                oops wrong url!
               </div>
             }
           />
