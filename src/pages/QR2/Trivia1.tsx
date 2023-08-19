@@ -11,14 +11,12 @@ const Trivia1: React.FC = () => {
     >
       <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
 
-        <p className="text-customGray text-xl mb-2">
-          ECO-TRIVIA
-        </p>
-        <p className="text-customGray uppercase mt-4 text-xl border border-customGray px-1">
-          <Link to="/trivia2" className="inline-block">
-            START
-          </Link>
-        </p>
+      <p className="text-customGray text-xl mb-2">ECO-TRIVIA</p>
+      <p className="text-customGray uppercase mt-4 text-xl border border-customGray px-1">
+        <Link to="/trivia2" className="inline-block">
+          START
+        </Link>
+      </p>
     </div>
   );
 };

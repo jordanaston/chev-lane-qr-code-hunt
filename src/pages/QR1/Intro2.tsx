@@ -11,9 +11,11 @@ const Intro2: React.FC = () => {
     >
       <TextBox>
         <p className="text-white">CLUE #1</p>
-        <p className="text-white mt-4 mb-4">THE ANSWERS LIE WITHIN THE FABRIC... </p>
+        <p className="text-white mt-4 mb-4">
+          THE ANSWERS LIE WITHIN THE FABRIC...{" "}
+        </p>
         <Link to="/" className="text-white pt-2">
-        ← BACK
+          ← BACK
         </Link>
       </TextBox>
     </div>
