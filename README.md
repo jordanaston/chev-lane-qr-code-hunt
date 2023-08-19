@@ -1,4 +1,6 @@
-# React + TypeScript + Vite
+# An interactive and educational app for a local sustainable fashion/ art retailer. Built with React / Typescript / Tailwind CSS.
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
