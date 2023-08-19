@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        customBlack: "#2b2b2b",
+        customBlack: "#2B2B2B",
+        customGrey: "#A4A4A4"
       },
     },
   },
