@@ -5,7 +5,12 @@ export default {
     extend: {
       backgroundColor: {
         customBlack: "#2B2B2B",
-        customGrey: "#A4A4A4"
+      },
+      textColor: {
+        customGray: "#A4A4A4",
+      },
+      borderColor: {
+        customGray: "#A4A4A4",
       },
     },
   },
