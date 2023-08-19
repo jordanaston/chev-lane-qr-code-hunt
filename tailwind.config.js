@@ -8,9 +8,11 @@ export default {
       },
       textColor: {
         customGray: "#A4A4A4",
+        customBlack: "#2B2B2B",
       },
       borderColor: {
         customGray: "#A4A4A4",
+        customBlack: "#2B2B2B",
       },
     },
   },

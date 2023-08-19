@@ -12,6 +12,8 @@ import Trivia8 from "./pages/QR2/Trivia8";
 import Trivia9 from "./pages/QR2/Trivia9";
 import Trivia10 from "./pages/QR2/Trivia10";
 import Trivia11 from "./pages/QR2/Trivia11";
+import Challenge1 from "./pages/QR3/Challenge1";
+import Challenge2 from "./pages/QR3/Challenge2";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/trivia9" element={<Trivia9 />} />
           <Route path="/trivia10" element={<Trivia10 />} />
           <Route path="/trivia11" element={<Trivia11 />} />
+          <Route path="/challenge1" element={<Challenge1 />} />
+          <Route path="/challenge2" element={<Challenge2 />} />
           <Route
             path="*"
             element={
