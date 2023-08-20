@@ -18,7 +18,7 @@ const UpCycling2: React.FC = () => {
       window.addEventListener("DOMContentLoaded", handleLoad);
       return () => window.removeEventListener("DOMContentLoaded", handleLoad);
     }
-  }, []);
+  });
 
   return (
     <div
