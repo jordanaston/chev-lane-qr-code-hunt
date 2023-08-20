@@ -8,9 +8,16 @@ import UpCyclingImage3 from "../../assets/Images/Up-Cycling-Image3.png";
 
 const UpCycling2: React.FC = () => {
   useEffect(() => {
-    setTimeout(() => {
+    function handleLoad() {
       window.scrollTo(0, 0);
-    }, 100); 
+    }
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("DOMContentLoaded", handleLoad);
+      return () => window.removeEventListener("DOMContentLoaded", handleLoad);
+    }
   }, []);
 
   return (
