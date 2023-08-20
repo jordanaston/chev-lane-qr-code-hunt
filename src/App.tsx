@@ -22,6 +22,8 @@ import FashionChelsea5 from "./pages/QR4/FashionChelsea5";
 import FashionChelsea6 from "./pages/QR4/FashionChelsea6";
 import FashionChelsea7 from "./pages/QR4/FashionChelsea7";
 import DesignerSpotlight1 from "./pages/QR5/DesignerSpotlight1";
+import UpCycling1 from "./pages/QR6/UpCycling1";
+import UpCycling2 from "./pages/QR6/UpCycling2";
 
 import FinalQr from "./pages/QR7/FinalQr";
 
@@ -53,6 +55,8 @@ function App() {
           <Route path="/fashionchelsea6" element={<FashionChelsea6 />} />
           <Route path="/fashionchelsea7" element={<FashionChelsea7 />} />
           <Route path="/designerspotlight1" element={<DesignerSpotlight1 />} />
+          <Route path="/upcycling1" element={<UpCycling1 />} />
+          <Route path="/upcycling2" element={<UpCycling2 />} />
 
           <Route path="/finalqr" element={<FinalQr />} />
           <Route

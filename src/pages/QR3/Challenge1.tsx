@@ -4,7 +4,6 @@ import ChallengeBackground from "../../assets/Backgrounds/Challenge-BG.png";
 import TextBox from "../../components/TextBox";
 
 const Challenge1: React.FC = () => {
-
   useEffect(() => {
     // Calculate the middle of the page.
     const middle =
@@ -20,18 +19,6 @@ const Challenge1: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <div
-        style={{
-          content: '""',
-          position: "absolute",
-          top: "20px",
-          right: "20px",
-          bottom: "20px",
-          left: "20px",
-          border: "1px solid #2B2B2B",
-          zIndex: 0,
-        }}
-      ></div>
       <div className="px-5" style={{ zIndex: 2 }}>
         <TextBox className="border-customBlack">
           <p className="text-white text-lg text-center">
