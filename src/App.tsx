@@ -15,6 +15,12 @@ import Trivia11 from "./pages/QR2/Trivia11";
 import Challenge1 from "./pages/QR3/Challenge1";
 import Challenge2 from "./pages/QR3/Challenge2";
 import FashionChelsea1 from "./pages/QR4/FashionChelsea1";
+import FashionChelsea2 from "./pages/QR4/FashionChelsea2";
+import FashionChelsea3 from "./pages/QR4/FashionChelsea3";
+import FashionChelsea4 from "./pages/QR4/FashionChelsea4";
+import FashionChelsea5 from "./pages/QR4/FashionChelsea5";
+import FashionChelsea6 from "./pages/QR4/FashionChelsea6";
+import FashionChelsea7 from "./pages/QR4/FashionChelsea7";
 
 function App() {
   return (
@@ -37,6 +43,12 @@ function App() {
           <Route path="/challenge1" element={<Challenge1 />} />
           <Route path="/challenge2" element={<Challenge2 />} />
           <Route path="/fashionchelsea1" element={<FashionChelsea1 />} />
+          <Route path="/fashionchelsea2" element={<FashionChelsea2 />} />
+          <Route path="/fashionchelsea3" element={<FashionChelsea3 />} />
+          <Route path="/fashionchelsea4" element={<FashionChelsea4 />} />
+          <Route path="/fashionchelsea5" element={<FashionChelsea5 />} />
+          <Route path="/fashionchelsea6" element={<FashionChelsea6 />} />
+          <Route path="/fashionchelsea7" element={<FashionChelsea7 />} />
           <Route
             path="*"
             element={
