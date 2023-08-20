@@ -4,9 +4,7 @@ import TextBox from "../../components/TextBox";
 import FinalQRBackground from "../../assets/Backgrounds/Final-QR-BG.png";
 
 const FinalQr: React.FC = () => {
-  
   useEffect(() => {
-    // Calculate the middle of the page.
     const middle =
       (document.documentElement.scrollHeight - window.innerHeight) / 2;
     window.scrollTo(0, middle);

@@ -3,9 +3,7 @@ import TextBox from "../../components/TextBox";
 import DesignerSpotlightBackground from "../../assets/Backgrounds/Designer-Spotlight-BG.png";
 
 const DesignerSpotlight1: React.FC = () => {
-  
   useEffect(() => {
-    // Calculate the middle of the page.
     const middle =
       (document.documentElement.scrollHeight - window.innerHeight) / 2;
     window.scrollTo(0, middle);

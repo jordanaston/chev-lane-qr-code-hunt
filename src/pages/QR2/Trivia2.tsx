@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import TextBox from "../../components/TextBox";
@@ -11,6 +11,12 @@ const Trivia2: React.FC = () => {
     "Claims of environmental sustainability by a brand that are false or misleading.",
     "A term used for companies that actively support environmental regulations.",
   ];
+
+  useEffect(() => {
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
 
   return (
     <div

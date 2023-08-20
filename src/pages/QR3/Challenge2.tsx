@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Challenge2Background from "../../assets/Backgrounds/Challenge2-BG.png";
 import TextBox from "../../components/TextBox";
 import Typewriter from "../../components/Typewriter";
 
 const Challenge2: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative"

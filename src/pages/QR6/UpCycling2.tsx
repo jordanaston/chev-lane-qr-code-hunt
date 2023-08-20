@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TextBox from "../../components/TextBox";
 import UpCyclingBackground2 from "../../assets/Backgrounds/Up-Cycling-BG2.png";
@@ -7,6 +7,10 @@ import UpCyclingImage2 from "../../assets/Images/Up-Cycling-Image2.png";
 import UpCyclingImage3 from "../../assets/Images/Up-Cycling-Image3.png";
 
 const UpCycling1: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative"

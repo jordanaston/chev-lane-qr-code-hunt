@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import TextBox from "../../components/TextBox";
@@ -11,6 +11,12 @@ const Trivia6: React.FC = () => {
     "3,781 Litres",
     "506 Litres",
   ];
+
+  useEffect(() => {
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
 
   return (
     <div

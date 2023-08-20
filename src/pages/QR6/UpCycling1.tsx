@@ -5,7 +5,6 @@ import UpCyclingBackground from "../../assets/Backgrounds/Up-Cycling-BG1.png";
 
 const UpCycling1: React.FC = () => {
   useEffect(() => {
-    // Calculate the middle of the page.
     const middle =
       (document.documentElement.scrollHeight - window.innerHeight) / 2;
     window.scrollTo(0, middle);
@@ -20,7 +19,7 @@ const UpCycling1: React.FC = () => {
       }}
     >
       <div className="" style={{ zIndex: 2 }}>
-        <TextBox className="border-none bg-opacity-0">
+        <TextBox className="border-none bg-transparent">
           <p className="text-white text-3xl text-center font-semibold">
             # UPCYCLING 101
           </p>
@@ -29,7 +28,7 @@ const UpCycling1: React.FC = () => {
       <div className="" style={{ zIndex: 2 }}>
         <TextBox className="border-white">
           <p className="text-white text-lg text-justify uppercase">
-            The Majority of the items we stock have been up-cycled or
+            The majority of the items we stock have been up-cycled or
             recycled...
             <br />
             <br />

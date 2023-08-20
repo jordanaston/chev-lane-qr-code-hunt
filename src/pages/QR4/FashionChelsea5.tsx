@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ChelseaImage5 from "../../assets/Images/Chelsea-Image-5.png";
 
 const FashionChelsea5: React.FC = () => {
+  useEffect(() => {
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed text-justify">
       <div className="">

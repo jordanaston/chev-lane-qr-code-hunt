@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import TextBox from "../../components/TextBox";
 
 const Trivia9: React.FC = () => {
+  useEffect(() => {
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
+
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono"

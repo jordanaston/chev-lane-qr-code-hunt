@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ChelseaBackground from "../../assets/Images/Chelsea-Image-7.png";
 import TextBox from "../../components/TextBox";
 import Typewriter from "../../components/Typewriter";
 
 const FashionChelsea7: React.FC = () => {
+  useEffect(() => {
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative"
