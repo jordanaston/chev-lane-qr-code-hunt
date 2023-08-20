@@ -4,6 +4,7 @@ import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import ChevLaneLogo from "../../assets/Logos/Chev-Lane-Wavey-Logo.png";
 
 const Trivia1: React.FC = () => {
+  
   useEffect(() => {
     // Calculate the middle of the page.
     const middle =

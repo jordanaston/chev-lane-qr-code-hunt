@@ -5,6 +5,7 @@ import ChevLaneLogo from "../../assets/Logos/Chev-Lane-Wavey-Logo.png";
 import TextBox from "../../components/TextBox";
 
 const Intro1: React.FC = () => {
+  
   useEffect(() => {
     // Calculate the middle of the page.
     const middle =

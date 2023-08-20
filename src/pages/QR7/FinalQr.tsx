@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ChevLaneLogoBlack from "../../assets/Logos/Chev-Lane-Wavey-Logo-Black.png";
 import TextBox from "../../components/TextBox";
 import FinalQRBackground from "../../assets/Backgrounds/Final-QR-BG.png";
 
 const FinalQr: React.FC = () => {
+  
+  useEffect(() => {
+    // Calculate the middle of the page.
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
+
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed text-justify"
