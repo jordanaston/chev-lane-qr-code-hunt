@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import IntroBackground from "../../assets/Backgrounds/Intro-BG.png";
 import TextBox from "../../components/TextBox";
+import Typewriter from "../../components/Typewriter";
 
 const Intro2: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Intro2: React.FC = () => {
       <TextBox>
         <p className="text-white"># CLUE</p>
         <p className="text-white mt-4 mb-4">
-          THE ANSWERS LIE WITHIN THE FABRIC...{" "}
+          <Typewriter text="THE ANSWERS LIE WITHIN THE FABRIC..." delay={80} />
         </p>
         <Link to="/" className="text-white pt-2">
           ← BACK

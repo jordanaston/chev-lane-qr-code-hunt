@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import TextBox from "../../components/TextBox";
+import Typewriter from "../../components/Typewriter";
 
 const Trivia10: React.FC = () => {
   return (
@@ -21,7 +22,10 @@ const Trivia10: React.FC = () => {
           <br />
           <br />
           # Clue <br />
-          Search for Fashion Chelsea between the racks.
+          <Typewriter
+            text="Search for Fashion Chelsea between the racks."
+            delay={80}
+          />
           <br />
         </p>
       </TextBox>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Challenge2Background from "../../assets/Backgrounds/Challenge2-BG.png";
 import TextBox from "../../components/TextBox";
+import Typewriter from "../../components/Typewriter";
 
 const Challenge2: React.FC = () => {
   return (
@@ -58,10 +59,22 @@ const Challenge2: React.FC = () => {
             Alright, enough of the SOPPY STUFF! GO HUNT DOWN THOSE QR CODES!
             <br />
             <br />
-            # CLUE - the code is hidden within a two-word accessory.
-            <br />
-            <br />
-            HINT - DENIM PATCHWORK...
+            # CLUE <br />
+            <div>
+              <Typewriter
+                text="THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY."
+                delay={80}
+              />
+              <br />
+              <br />
+              <Typewriter
+                text="HINT: DENIM PATCHWORK..."
+                delay={80}
+                initialDelay={
+                  80 * "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
+                }
+              />
+            </div>
           </p>
         </TextBox>
       </div>
