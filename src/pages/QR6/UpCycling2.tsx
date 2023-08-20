@@ -28,21 +28,21 @@ const UpCycling2: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <div className="" style={{ zIndex: 2 }}>
+      <div className="mt-10" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-transparent">
           <p className="text-3xl text-center font-semibold"># UPCYCLING 101</p>
         </TextBox>
       </div>
       <img src={UpCyclingImage1} alt="Chev Lane Logo" className="w-80" />
       <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
-        <TextBox className="border-none bg-opacity-0">
+        <TextBox className="border-none bg-transparent">
           <p className="">• Reduces waste using discarded materials.</p>
           <p className="mt-6">• Minimises the need for new raw resources.</p>
         </TextBox>
       </div>
       <img src={UpCyclingImage2} alt="Chev Lane Logo" className="w-82" />
       <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
-        <TextBox className="border-none bg-opacity-0">
+        <TextBox className="border-none bg-transparent">
           <p className="">• Extends the life-cycle of clothing items.</p>
           <p className="mt-6">
             • Encourages sustainable production & consumption.
@@ -56,10 +56,10 @@ const UpCycling2: React.FC = () => {
         className="w-80 mb-6 mt-4"
       />
       <div
-        className="text-left  font-medium text-lg pl-4"
+        className="text-left font-medium text-lg pl-4"
         style={{ zIndex: 2 }}
       >
-        <TextBox className="border-none bg-opacity-0">
+        <TextBox className="border-none bg-transparent">
           <p className="">• Fosters creativity and innovation in design.</p>
           <p className="mt-6">
             • Supports local artisans and small businesses.
@@ -68,7 +68,7 @@ const UpCycling2: React.FC = () => {
         </TextBox>
       </div>
       <p
-        className=" uppercase text-xl border border-customBlack p-1 px-2 mt-2 mb-12 mr-2"
+        className="uppercase text-xl border border-customBlack p-1 px-2 mt-2 mb-12 mr-2"
         style={{ zIndex: 2 }}
       >
         <Link to="/upcycling1" className="inline-block">
