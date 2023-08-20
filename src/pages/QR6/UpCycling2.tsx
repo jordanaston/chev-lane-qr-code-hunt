@@ -8,39 +8,33 @@ import UpCyclingImage3 from "../../assets/Images/Up-Cycling-Image3.png";
 
 const UpCycling1: React.FC = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100); 
   }, []);
 
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative text-white"
+      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative text-customBlack"
       style={{
         backgroundImage: `url(${UpCyclingBackground2})`,
         zIndex: 1,
       }}
     >
       <div className="" style={{ zIndex: 2 }}>
-        <TextBox className="border-none bg-opacity-0">
-          <p className="text-3xl text-center font-semibold">
-            # UPCYCLING 101
-          </p>
+        <TextBox className="border-none bg-transparent">
+          <p className="text-3xl text-center font-semibold"># UPCYCLING 101</p>
         </TextBox>
       </div>
       <img src={UpCyclingImage1} alt="Chev Lane Logo" className="w-80" />
-      <div
-        className="text-left font-medium text-lg pl-4"
-        style={{ zIndex: 2 }}
-      >
+      <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-opacity-0">
           <p className="">• Reduces waste using discarded materials.</p>
           <p className="mt-6">• Minimises the need for new raw resources.</p>
         </TextBox>
       </div>
       <img src={UpCyclingImage2} alt="Chev Lane Logo" className="w-82" />
-      <div
-        className="text-left font-medium text-lg pl-4"
-        style={{ zIndex: 2 }}
-      >
+      <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-opacity-0">
           <p className="">• Extends the life-cycle of clothing items.</p>
           <p className="mt-6">

@@ -6,7 +6,9 @@ import Typewriter from "../../components/Typewriter";
 
 const Challenge2: React.FC = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
   }, []);
 
   return (
