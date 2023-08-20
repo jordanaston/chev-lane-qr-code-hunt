@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ChelseaBackground from "../../assets/Images/Chelsea-Image-7.png";
 import TextBox from "../../components/TextBox";
 import Typewriter from "../../components/Typewriter";
 
 const FashionChelsea7: React.FC = () => {
+  const [revealClue, setRevealClue] = useState(false);
+
   useEffect(() => {
     const middle =
       (document.documentElement.scrollHeight - window.innerHeight) / 2;
@@ -35,9 +37,22 @@ const FashionChelsea7: React.FC = () => {
             you. While the initial expense might be greater, they provide
             lasting value for both you and the makers, unlike fleeting
             fast-fashion trends.
-            <p className="mt-4"># CLUE</p>
-            <p className="mt-4">
-              <Typewriter text="RAISE YOUR GAZE..." delay={80} />
+            <p className="text-customBlack text-sm text-justify">
+              {revealClue ? (
+                <>
+                  <p className="mt-4"># CLUE</p>
+                  <p className="mt-4">
+                    <Typewriter text="RAISE YOUR GAZE..." delay={80} />
+                  </p>
+                </>
+              ) : (
+                <button
+                  className="border border-customBlack mt-4 p-1 px-2"
+                  onClick={() => setRevealClue(true)}
+                >
+                  REVEAL NEXT CLUE!
+                </button>
+              )}
             </p>
           </p>
         </TextBox>

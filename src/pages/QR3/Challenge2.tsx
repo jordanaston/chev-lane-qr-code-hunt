@@ -1,15 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Challenge2Background from "../../assets/Backgrounds/Challenge2-BG.png";
 import TextBox from "../../components/TextBox";
 import Typewriter from "../../components/Typewriter";
 
 const Challenge2: React.FC = () => {
+  const [revealClue, setRevealClue] = useState(false);
+
   useEffect(() => {
     function handleLoad() {
       setTimeout(() => {
         window.scrollTo(0, 0);
-      }, 100); 
+      }, 100);
     }
 
     if (document.readyState === "complete") {
@@ -18,7 +20,7 @@ const Challenge2: React.FC = () => {
       window.addEventListener("DOMContentLoaded", handleLoad);
       return () => window.removeEventListener("DOMContentLoaded", handleLoad);
     }
-  });
+  }, []);
 
   return (
     <div
@@ -62,22 +64,34 @@ const Challenge2: React.FC = () => {
             Alright, enough of the SOPPY STUFF! GO HUNT DOWN THOSE QR CODES!
             <br />
             <br />
-            # CLUE <br />
-            <div>
-              <Typewriter
-                text="THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY."
-                delay={80}
-              />
-              <br />
-              <br />
-              <Typewriter
-                text="HINT: DENIM PATCHWORK..."
-                delay={80}
-                initialDelay={
-                  80 * "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
-                }
-              />
-            </div>
+            {revealClue ? (
+              <>
+                # CLUE <br />
+                <div>
+                  <Typewriter
+                    text="THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY."
+                    delay={80}
+                  />
+                  <br />
+                  <br />
+                  <Typewriter
+                    text="HINT: DENIM PATCHWORK..."
+                    delay={80}
+                    initialDelay={
+                      80 *
+                      "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
+                    }
+                  />
+                </div>
+              </>
+            ) : (
+              <button
+                className="border p-1 px-2"
+                onClick={() => setRevealClue(true)}
+              >
+                REVEAL NEXT CLUE!
+              </button>
+            )}
           </p>
         </TextBox>
       </div>
@@ -94,7 +108,7 @@ const Challenge2: React.FC = () => {
                 (document.documentElement.scrollHeight - window.innerHeight) /
                 2;
               window.scrollTo(0, middle);
-            }, 100); 
+            }, 100);
           }}
         >
           ← Back

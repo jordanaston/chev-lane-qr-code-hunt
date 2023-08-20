@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
 import TextBox from "../../components/TextBox";
 import Typewriter from "../../components/Typewriter";
 
 const Trivia10: React.FC = () => {
+  const [revealClue, setRevealClue] = useState(false);
+
   useEffect(() => {
     const middle =
       (document.documentElement.scrollHeight - window.innerHeight) / 2;
@@ -27,12 +29,23 @@ const Trivia10: React.FC = () => {
           Now get outta here! Go find the next QR code!
           <br />
           <br />
-          # Clue <br />
-          <Typewriter
-            text="Search for Fashion Chelsea between the racks."
-            delay={80}
-          />
-          <br />
+          {revealClue ? (
+            <>
+              # Clue <br />
+              <Typewriter
+                text="Search for Fashion Chelsea between the racks."
+                delay={80}
+              />
+              <br />
+            </>
+          ) : (
+            <button
+              className="yourButtonStylesHere border p-1 px-2"
+              onClick={() => setRevealClue(true)}
+            >
+              REVEAL NEXT CLUE!
+            </button>
+          )}
         </p>
       </TextBox>
 

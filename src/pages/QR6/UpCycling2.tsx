@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TextBox from "../../components/TextBox";
 import UpCyclingBackground2 from "../../assets/Backgrounds/Up-Cycling-BG2.png";
@@ -7,6 +7,8 @@ import UpCyclingImage2 from "../../assets/Images/Up-Cycling-Image2.png";
 import UpCyclingImage3 from "../../assets/Images/Up-Cycling-Image3.png";
 
 const UpCycling2: React.FC = () => {
+  const [revealClue, setRevealClue] = useState(false);
+
   useEffect(() => {
     function handleLoad() {
       window.scrollTo(0, 0);
@@ -18,7 +20,7 @@ const UpCycling2: React.FC = () => {
       window.addEventListener("DOMContentLoaded", handleLoad);
       return () => window.removeEventListener("DOMContentLoaded", handleLoad);
     }
-  });
+  }, []);
 
   return (
     <div
@@ -50,11 +52,20 @@ const UpCycling2: React.FC = () => {
           <p className="mt-6">• Saves energy & water in manufacturing.</p>
         </TextBox>
       </div>
-      <img
-        src={UpCyclingImage3}
-        alt="Chev Lane Logo"
-        className="w-80 mb-6 mt-4"
-      />
+      {revealClue ? (
+        <img
+          src={UpCyclingImage3}
+          alt="Chev Lane Logo"
+          className="w-80 mb-6 mt-4"
+        />
+      ) : (
+        <button
+          className="border p-1 px-2 mt-4 mb-4 text-lg border-customBlack"
+          onClick={() => setRevealClue(true)}
+        >
+          REVEAL NEXT CLUE!
+        </button>
+      )}
       <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-transparent">
           <p className="">• Fosters creativity and innovation in design.</p>
@@ -77,7 +88,7 @@ const UpCycling2: React.FC = () => {
                 (document.documentElement.scrollHeight - window.innerHeight) /
                 2;
               window.scrollTo(0, middle);
-            }, 100); // delay for 100ms
+            }, 100);
           }}
         >
           ← BACK
