@@ -42,7 +42,11 @@ const UpCycling1: React.FC = () => {
         className="text-white uppercase text-xl border border-white p-1 px-2 mt-10"
         style={{ zIndex: 2 }}
       >
-        <Link to="/upcycling2" className="inline-block">
+        <Link
+          to="/upcycling2"
+          className="inline-block"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           NEXT →
         </Link>
       </p>

@@ -55,10 +55,7 @@ const UpCycling2: React.FC = () => {
         alt="Chev Lane Logo"
         className="w-80 mb-6 mt-4"
       />
-      <div
-        className="text-left font-medium text-lg pl-4"
-        style={{ zIndex: 2 }}
-      >
+      <div className="text-left font-medium text-lg pl-4" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-transparent">
           <p className="">• Fosters creativity and innovation in design.</p>
           <p className="mt-6">
@@ -71,7 +68,15 @@ const UpCycling2: React.FC = () => {
         className="uppercase text-xl border border-customBlack p-1 px-2 mt-2 mb-12 mr-2"
         style={{ zIndex: 2 }}
       >
-        <Link to="/upcycling1" className="inline-block">
+        <Link
+          to="/upcycling1"
+          className="inline-block"
+          onClick={() => {
+            const middle =
+              (document.documentElement.scrollHeight - window.innerHeight) / 2;
+            window.scrollTo(0, middle);
+          }}
+        >
           ← BACK
         </Link>
       </p>
