@@ -78,7 +78,7 @@ const Challenge2: React.FC = () => {
                     text="HINT: DENIM PATCHWORK..."
                     delay={40}
                     initialDelay={
-                      80 *
+                      37 *
                       "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
                     }
                   />
