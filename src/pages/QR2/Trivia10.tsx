@@ -20,7 +20,7 @@ const Trivia10: React.FC = () => {
           Now get outta here! Go find the next QR code!
           <br />
           <br />
-          Clue# <br />
+          # Clue <br />
           Search for Fashion Chelsea between the racks.
           <br />
         </p>

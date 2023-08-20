@@ -7,7 +7,7 @@ import TextBox from "../../components/TextBox";
 const Intro1: React.FC = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed"
+      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed text-justify"
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
       <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
@@ -25,11 +25,11 @@ const Intro1: React.FC = () => {
         </p>
       </TextBox>
       <TextBox>
-        <p className="text-white">
+        <p className="text-white uppercase">
           FIND and complete ALL 5 QR CODES hidden within our stall & WIN A
           reward AT THE END.
         </p>
-        <p className="text-white mt-4">10-20mins to complete on average.</p>
+        <p className="text-white mt-4 text-xs">10-20mins to complete on average.</p>
       </TextBox>
     </div>
   );

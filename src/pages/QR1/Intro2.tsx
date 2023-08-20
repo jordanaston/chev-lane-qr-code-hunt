@@ -10,7 +10,7 @@ const Intro2: React.FC = () => {
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
       <TextBox>
-        <p className="text-white">CLUE #1</p>
+        <p className="text-white"># CLUE</p>
         <p className="text-white mt-4 mb-4">
           THE ANSWERS LIE WITHIN THE FABRIC...{" "}
         </p>

@@ -25,15 +25,15 @@ const Challenge1: React.FC = () => {
         }}
       ></div>
       <div className="px-5" style={{ zIndex: 2 }}>
-        <TextBox>
-          <p className="text-white text-md">
+        <TextBox className="border-customBlack">
+          <p className="text-white text-lg text-center">
             Community Textile Art Installation:
           </p>
         </TextBox>
       </div>
       <div className="px-5" style={{ zIndex: 2 }}>
-        <TextBox>
-          <p className="text-white text-md">
+        <TextBox className="bg-transparent border-customBlack">
+          <p className="text-customBlack font-semibold text-lg text-justify">
             WELCOME TO OUR INTERACTIVE ART INSTALLATION CHALLENGE!
             <br />
             <br />
@@ -46,7 +46,7 @@ const Challenge1: React.FC = () => {
         className="text-customBlack uppercase mt-4 text-xl border border-customBlack p-1 px-2"
         style={{ zIndex: 2 }}
       >
-        <Link to="/challenge2" className="inline-block">
+        <Link to="/challenge2" className="inline-block font-semibold">
           CHALLENGE DETAILS →
         </Link>
       </p>

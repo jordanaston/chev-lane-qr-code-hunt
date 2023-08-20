@@ -12,7 +12,7 @@ const Challenge2: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <div
+      {/* <div
         style={{
           content: '""',
           position: "absolute",
@@ -23,23 +23,15 @@ const Challenge2: React.FC = () => {
           border: "0.1px solid white",
           zIndex: 0,
         }}
-      ></div>
-      <div className="px-5 pt-5" style={{ zIndex: 2 }}>
+      ></div> */}
+      <div className="pt-2" style={{ zIndex: 2 }}>
         <TextBox>
           <p className="text-white text-md text-center">
             COMMUNITY TEXTILE ART INSTALLATION
           </p>
-          <p
-            className="text-customBlack uppercase mt-4 text-xl text-center border border-white p-1 px-2"
-            style={{ zIndex: 2 }}
-          >
-            <Link to="/challenge1" className="text-white">
-              BACK
-            </Link>
-          </p>
         </TextBox>
       </div>
-      <div className="px-5 pb-5" style={{ zIndex: 2 }}>
+      <div className="pb-2" style={{ zIndex: 2 }}>
         <TextBox>
           <p className="text-white text-md">
             1. Choose a fabric scrap from our collection of off-cuts and
@@ -73,6 +65,14 @@ const Challenge2: React.FC = () => {
           </p>
         </TextBox>
       </div>
+      <p
+        className="text-customBlack mb-7 text-xl mr-4 px-2"
+        style={{ zIndex: 2 }}
+      >
+        <Link to="/challenge1" className="text-white">
+          ← Back
+        </Link>
+      </p>
     </div>
   );
 };
