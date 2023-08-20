@@ -13,7 +13,7 @@ const UpCycling1: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative"
+      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative text-white"
       style={{
         backgroundImage: `url(${UpCyclingBackground2})`,
         zIndex: 1,
@@ -21,14 +21,14 @@ const UpCycling1: React.FC = () => {
     >
       <div className="" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-opacity-0">
-          <p className="text-customBlack text-3xl text-center font-semibold">
+          <p className="text-3xl text-center font-semibold">
             # UPCYCLING 101
           </p>
         </TextBox>
       </div>
       <img src={UpCyclingImage1} alt="Chev Lane Logo" className="w-80" />
       <div
-        className="text-left text-customBlack font-medium text-lg pl-4"
+        className="text-left font-medium text-lg pl-4"
         style={{ zIndex: 2 }}
       >
         <TextBox className="border-none bg-opacity-0">
@@ -38,7 +38,7 @@ const UpCycling1: React.FC = () => {
       </div>
       <img src={UpCyclingImage2} alt="Chev Lane Logo" className="w-82" />
       <div
-        className="text-left text-customBlack font-medium text-lg pl-4"
+        className="text-left font-medium text-lg pl-4"
         style={{ zIndex: 2 }}
       >
         <TextBox className="border-none bg-opacity-0">
@@ -55,7 +55,7 @@ const UpCycling1: React.FC = () => {
         className="w-80 mb-6 mt-4"
       />
       <div
-        className="text-left text-customBlack font-medium text-lg pl-4"
+        className="text-left  font-medium text-lg pl-4"
         style={{ zIndex: 2 }}
       >
         <TextBox className="border-none bg-opacity-0">
@@ -67,7 +67,7 @@ const UpCycling1: React.FC = () => {
         </TextBox>
       </div>
       <p
-        className="text-customBlack uppercase text-xl border border-customBlack p-1 px-2 mt-2 mb-12 mr-2"
+        className=" uppercase text-xl border border-customBlack p-1 px-2 mt-2 mb-12 mr-2"
         style={{ zIndex: 2 }}
       >
         <Link to="/upcycling1" className="inline-block">
