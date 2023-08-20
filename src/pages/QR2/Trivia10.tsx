@@ -48,12 +48,6 @@ const Trivia10: React.FC = () => {
           )}
         </p>
       </TextBox>
-
-      <p className="text-white uppercase mt-4 text-xl border border-white p-1 px-2">
-        <Link to="/trivia11" className="inline-block">
-          DONE
-        </Link>
-      </p>
     </div>
   );
 };
