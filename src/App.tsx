@@ -21,6 +21,7 @@ import FashionChelsea4 from "./pages/QR4/FashionChelsea4";
 import FashionChelsea5 from "./pages/QR4/FashionChelsea5";
 import FashionChelsea6 from "./pages/QR4/FashionChelsea6";
 import FashionChelsea7 from "./pages/QR4/FashionChelsea7";
+import DesignerSpotlight1 from "./pages/QR5/DesignerSpotlight1";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/fashionchelsea5" element={<FashionChelsea5 />} />
           <Route path="/fashionchelsea6" element={<FashionChelsea6 />} />
           <Route path="/fashionchelsea7" element={<FashionChelsea7 />} />
+          <Route path="/designerspotlight1" element={<DesignerSpotlight1 />} />
           <Route
             path="*"
             element={
