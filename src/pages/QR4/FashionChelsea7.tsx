@@ -1,36 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ChelseaBackground from "../../assets/Images/Chelsea-Image-7.png";
+import TextBox from "../../components/TextBox";
+import Typewriter from "../../components/Typewriter";
 
 const FashionChelsea7: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed text-justify">
-      <div className="">
-
-        <div className="flex justify-between mt-8">
-          <p
-            className="text-customBlack uppercase text-md text-right"
-            style={{ zIndex: 2 }}
-          >
-            <Link
-              to="/fashionchelsea6"
-              className="inline-block font-mono font-light border border-customBlack p-1 px-2"
-            >
-              ← BACK
-            </Link>
+    <div
+      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover font-mono relative"
+      style={{
+        backgroundImage: `url(${ChelseaBackground})`,
+        zIndex: 1,
+      }}
+    >
+      <div className="" style={{ zIndex: 2 }}>
+        <TextBox className="bg-transparent bg-white border-customBlack">
+          <p className="text-customBlack text-sm text-justify">
+            The good thing is, we can make informed choices to invest our
+            fashion budget wisely!
+            <br />
+            <br />
+            From purchasing items from op-shops and online marketplaces such as
+            Depop, to embracing practices like repairing, and supporting local
+            designers, there's a wide range of more ethical and sustainable
+            options available.
+            <br />
+            <br />
+            Think about investing in higher-quality items that resonate with
+            you. While the initial expense might be greater, they provide
+            lasting value for both you and the makers, unlike fleeting
+            fast-fashion trends.
+            <p className="mt-4"># CLUE</p>
+            <p className="mt-4">
+              <Typewriter text="RAISE YOUR GAZE..." delay={80} />
+            </p>
           </p>
-          <p
-            className="text-customBlack uppercase text-md text-right"
-            style={{ zIndex: 2 }}
-          >
-            <Link
-              to="/fashionchelsea7"
-              className="inline-block font-mono font-light border border-customBlack p-1 px-2"
-            >
-              NEXT →
-            </Link>
-          </p>
-        </div>
+        </TextBox>
       </div>
+      <p
+        className="text-customBlack uppercase text-xl border border-customBlack p-1 px-2"
+        style={{ zIndex: 2 }}
+      >
+        <Link to="/fashionchelsea6" className="inline-block">
+          ← BACK
+        </Link>
+      </p>
     </div>
   );
 };

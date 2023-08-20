@@ -15,7 +15,10 @@ const FashionChelsea1: React.FC = () => {
         className="text-customBlack uppercase mt-8 text-xl border border-customBlack p-1 px-2"
         style={{ zIndex: 2 }}
       >
-        <Link to="/fashionchelsea2" className="inline-block font-mono font-light">
+        <Link
+          to="/fashionchelsea2"
+          className="inline-block font-mono font-light"
+        >
           LEARN ABOUT MY STORY! →
         </Link>
       </p>
