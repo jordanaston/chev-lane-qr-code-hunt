@@ -9,12 +9,12 @@ const Challenge2: React.FC = () => {
     function handleLoad() {
       window.scrollTo(0, 0);
     }
-    
-    if (document.readyState === 'complete') {
+
+    if (document.readyState === "complete") {
       handleLoad();
     } else {
-      window.addEventListener('DOMContentLoaded', handleLoad);
-      return () => window.removeEventListener('DOMContentLoaded', handleLoad);
+      window.addEventListener("DOMContentLoaded", handleLoad);
+      return () => window.removeEventListener("DOMContentLoaded", handleLoad);
     }
   });
 
@@ -83,7 +83,18 @@ const Challenge2: React.FC = () => {
         className="text-customBlack mb-7 text-xl mr-4 px-2"
         style={{ zIndex: 2 }}
       >
-        <Link to="/challenge1" className="text-white">
+        <Link
+          to="/challenge1"
+          className="text-white"
+          onClick={() => {
+            setTimeout(() => {
+              const middle =
+                (document.documentElement.scrollHeight - window.innerHeight) /
+                2;
+              window.scrollTo(0, middle);
+            }, 100); // delay for 100ms
+          }}
+        >
           ← Back
         </Link>
       </p>

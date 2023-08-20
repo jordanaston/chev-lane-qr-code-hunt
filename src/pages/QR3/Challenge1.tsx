@@ -40,7 +40,11 @@ const Challenge1: React.FC = () => {
         className="text-customBlack uppercase mt-4 text-xl border border-customBlack p-1 px-2"
         style={{ zIndex: 2 }}
       >
-        <Link to="/challenge2" className="inline-block font-semibold">
+        <Link
+          to="/challenge2"
+          className="inline-block font-semibold"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           CHALLENGE DETAILS →
         </Link>
       </p>

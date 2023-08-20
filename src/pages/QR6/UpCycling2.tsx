@@ -72,9 +72,12 @@ const UpCycling2: React.FC = () => {
           to="/upcycling1"
           className="inline-block"
           onClick={() => {
-            const middle =
-              (document.documentElement.scrollHeight - window.innerHeight) / 2;
-            window.scrollTo(0, middle);
+            setTimeout(() => {
+              const middle =
+                (document.documentElement.scrollHeight - window.innerHeight) /
+                2;
+              window.scrollTo(0, middle);
+            }, 100); // delay for 100ms
           }}
         >
           ← BACK
