@@ -42,7 +42,7 @@ const FashionChelsea7: React.FC = () => {
                 <>
                   <p className="mt-4"># CLUE</p>
                   <p className="mt-4">
-                    <Typewriter text="RAISE YOUR GAZE..." delay={80} />
+                    <Typewriter text="RAISE YOUR GAZE..." delay={40} />
                   </p>
                 </>
               ) : (

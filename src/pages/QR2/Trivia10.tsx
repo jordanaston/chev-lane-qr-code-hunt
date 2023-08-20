@@ -34,7 +34,7 @@ const Trivia10: React.FC = () => {
               # Clue <br />
               <Typewriter
                 text="Search for Fashion Chelsea between the racks."
-                delay={80}
+                delay={40}
               />
               <br />
             </>

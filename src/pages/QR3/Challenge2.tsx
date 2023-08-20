@@ -70,13 +70,13 @@ const Challenge2: React.FC = () => {
                 <div>
                   <Typewriter
                     text="THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY."
-                    delay={80}
+                    delay={40}
                   />
                   <br />
                   <br />
                   <Typewriter
                     text="HINT: DENIM PATCHWORK..."
-                    delay={80}
+                    delay={40}
                     initialDelay={
                       80 *
                       "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
