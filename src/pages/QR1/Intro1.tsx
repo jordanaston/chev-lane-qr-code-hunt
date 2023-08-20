@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import IntroBackground from "../../assets/Backgrounds/Intro-BG.png";
 import ChevLaneLogo from "../../assets/Logos/Chev-Lane-Wavey-Logo.png";
 import TextBox from "../../components/TextBox";
 
 const Intro1: React.FC = () => {
+  useEffect(() => {
+    // Calculate the middle of the page.
+    const middle =
+      (document.documentElement.scrollHeight - window.innerHeight) / 2;
+    window.scrollTo(0, middle);
+  }, []);
+
   return (
     <div
       className="flex flex-col items-center justify-center w-full h-screen bg-center bg-cover"
