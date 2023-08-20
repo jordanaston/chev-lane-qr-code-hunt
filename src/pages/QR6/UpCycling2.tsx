@@ -6,7 +6,7 @@ import UpCyclingImage1 from "../../assets/Images/Up-Cycling-Image1.png";
 import UpCyclingImage2 from "../../assets/Images/Up-Cycling-Image2.png";
 import UpCyclingImage3 from "../../assets/Images/Up-Cycling-Image3.png";
 
-const UpCycling1: React.FC = () => {
+const UpCycling2: React.FC = () => {
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
@@ -72,4 +72,4 @@ const UpCycling1: React.FC = () => {
   );
 };
 
-export default UpCycling1;
+export default UpCycling2;
