@@ -8,35 +8,32 @@ import "../../Background.css";
 const Intro1: React.FC = () => {
   return (
     <div
-      className="fixed top-0 left-0 w-full h-screen bg-center bg-cover bg-fixed"
+      className="flex flex-col items-center justify-center w-full h-screen bg-center bg-cover"
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
-      <div className="flex flex-col items-center justify-center h-screen">
-        <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
+      <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
 
-        <TextBox>
-          <p className="text-white uppercase">
-            Welcome to our Chev Lane QR code Hunt: Tracing Fashion
-            Sustainability
-          </p>
-          <p className="text-white uppercase mt-4">
-            Click{" "}
-            <Link to="/intro2" className="underline inline-block font-bold">
-              ENTER
-            </Link>{" "}
-            to begin your journey and learn about sustainable fashion practices!
-          </p>
-        </TextBox>
-        <TextBox>
-          <p className="text-white uppercase">
-            FIND and complete ALL 5 QR CODES hidden within our stall & WIN A
-            reward AT THE END.
-          </p>
-          <p className="text-white mt-4 text-xs">
-            10-20mins to complete on average.
-          </p>
-        </TextBox>
-      </div>
+      <TextBox>
+        <p className="text-white uppercase">
+          Welcome to our Chev Lane QR code Hunt: Tracing Fashion Sustainability
+        </p>
+        <p className="text-white uppercase mt-4">
+          Click{" "}
+          <Link to="/intro2" className="underline inline-block font-bold">
+            ENTER
+          </Link>{" "}
+          to begin your journey and learn about sustainable fashion practices!
+        </p>
+      </TextBox>
+      <TextBox>
+        <p className="text-white uppercase">
+          FIND and complete ALL 5 QR CODES hidden within our stall & WIN A
+          reward AT THE END.
+        </p>
+        <p className="text-white mt-4 text-xs">
+          10-20mins to complete on average.
+        </p>
+      </TextBox>
     </div>
   );
 };
