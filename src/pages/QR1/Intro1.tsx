@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import IntroBackground from "../../assets/Backgrounds/Intro-BG.png";
 import ChevLaneLogo from "../../assets/Logos/Chev-Lane-Wavey-Logo.png";
 import TextBox from "../../components/TextBox";
+import "../../Background.css";
 
 const Intro1: React.FC = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-fixed text-justify"
+      className="flex flex-col items-center justify-center h-screen bg-center bg-cover bg-fixed text-justify fixed top-0 left-0 w-full"
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
       <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />
@@ -29,7 +30,9 @@ const Intro1: React.FC = () => {
           FIND and complete ALL 5 QR CODES hidden within our stall & WIN A
           reward AT THE END.
         </p>
-        <p className="text-white mt-4 text-xs">10-20mins to complete on average.</p>
+        <p className="text-white mt-4 text-xs">
+          10-20mins to complete on average.
+        </p>
       </TextBox>
     </div>
   );
