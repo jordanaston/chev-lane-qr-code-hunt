@@ -20,7 +20,7 @@ const UpCycling1: React.FC = () => {
     >
       <div className="" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-transparent">
-          <p className="text-white text-3xl text-center font-semibold">
+          <p className="text-customBlack text-3xl text-center underline underline-offset-4">
             # UPCYCLING 101
           </p>
         </TextBox>
@@ -39,7 +39,7 @@ const UpCycling1: React.FC = () => {
       </div>
 
       <p
-        className="text-white uppercase text-xl border border-white p-1 px-2 mt-10"
+        className="text-customBlack uppercase text-xl border border-customBlack p-1 px-2 mt-10"
         style={{ zIndex: 2 }}
       >
         <Link

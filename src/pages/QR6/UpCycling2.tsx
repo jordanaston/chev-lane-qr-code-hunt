@@ -32,7 +32,7 @@ const UpCycling2: React.FC = () => {
     >
       <div className="mt-10" style={{ zIndex: 2 }}>
         <TextBox className="border-none bg-transparent">
-          <p className="text-3xl text-center font-semibold"># UPCYCLING 101</p>
+          <p className="text-3xl text-center underline underline-offset-4"># UPCYCLING 101</p>
         </TextBox>
       </div>
       <img src={UpCyclingImage1} alt="Chev Lane Logo" className="w-80" />
@@ -60,7 +60,7 @@ const UpCycling2: React.FC = () => {
         />
       ) : (
         <button
-          className="border p-1 px-2 mt-4 mb-4 text-lg border-customBlack"
+          className="border p-1 px-2 mt-4 mb-4 text-xl border-customBlack"
           onClick={() => setRevealClue(true)}
         >
           REVEAL NEXT CLUE!
