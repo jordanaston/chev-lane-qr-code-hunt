@@ -7,7 +7,9 @@ import Typewriter from "../../components/Typewriter";
 const Challenge2: React.FC = () => {
   useEffect(() => {
     function handleLoad() {
-      window.scrollTo(0, 0);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100); 
     }
 
     if (document.readyState === "complete") {
@@ -92,7 +94,7 @@ const Challenge2: React.FC = () => {
                 (document.documentElement.scrollHeight - window.innerHeight) /
                 2;
               window.scrollTo(0, middle);
-            }, 100); // delay for 100ms
+            }, 100); 
           }}
         >
           ← Back

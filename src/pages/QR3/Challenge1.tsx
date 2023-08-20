@@ -43,7 +43,11 @@ const Challenge1: React.FC = () => {
         <Link
           to="/challenge2"
           className="inline-block font-semibold"
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={() => {
+            setTimeout(() => {
+              window.scrollTo(0, 0);
+            }, 100); 
+          }}
         >
           CHALLENGE DETAILS →
         </Link>
