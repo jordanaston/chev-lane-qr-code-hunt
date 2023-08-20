@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Intro1 from "./pages/QR1/Intro1";
 import Intro2 from "./pages/QR1/Intro2";
 import Trivia1 from "./pages/QR2/Trivia1";
@@ -28,6 +29,20 @@ import UpCycling2 from "./pages/QR6/UpCycling2";
 import FinalQr from "./pages/QR7/FinalQr";
 
 function App() {
+  useEffect(() => {
+    // Check if the browser supports scrollRestoration and set it to manual
+    if ("scrollRestoration" in window.history) {
+      // Store the original value so it can be reset later
+      const originalScrollRestoration = window.history.scrollRestoration;
+
+      window.history.scrollRestoration = "manual";
+
+      // Cleanup function to reset the value when the component unmounts
+      return () => {
+        window.history.scrollRestoration = originalScrollRestoration;
+      };
+    }
+  }, []);
   return (
     <Router>
       <div className="min-h-screen bg-white flex flex-col">
