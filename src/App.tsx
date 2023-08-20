@@ -1,4 +1,3 @@
-import 'normalize.css/normalize.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Intro1 from "./pages/QR1/Intro1";
 import Intro2 from "./pages/QR1/Intro2";
