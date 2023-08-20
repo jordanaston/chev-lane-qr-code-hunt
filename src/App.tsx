@@ -14,11 +14,12 @@ import Trivia10 from "./pages/QR2/Trivia10";
 import Trivia11 from "./pages/QR2/Trivia11";
 import Challenge1 from "./pages/QR3/Challenge1";
 import Challenge2 from "./pages/QR3/Challenge2";
+import FashionChelsea1 from "./pages/QR4/FashionChelsea1";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-customBlack flex flex-col">
+      <div className="min-h-screen bg-white flex flex-col">
         <Routes>
           <Route path="/" element={<Intro1 />} />
           <Route path="/intro2" element={<Intro2 />} />
@@ -35,10 +36,11 @@ function App() {
           <Route path="/trivia11" element={<Trivia11 />} />
           <Route path="/challenge1" element={<Challenge1 />} />
           <Route path="/challenge2" element={<Challenge2 />} />
+          <Route path="/fashionchelsea1" element={<FashionChelsea1 />} />
           <Route
             path="*"
             element={
-              <div className="flex flex-grow justify-center font-mono text-white items-center">
+              <div className="flex flex-grow justify-center font-mono text-customBlack items-center">
                 oops wrong url!
               </div>
             }

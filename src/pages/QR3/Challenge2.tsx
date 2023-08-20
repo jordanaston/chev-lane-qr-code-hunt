@@ -13,18 +13,6 @@ const Challenge2: React.FC = () => {
         zIndex: 1,
       }}
     >
-      {/* <div
-        style={{
-          content: '""',
-          position: "absolute",
-          top: "20px",
-          right: "20px",
-          bottom: "20px",
-          left: "20px",
-          border: "0.1px solid white",
-          zIndex: 0,
-        }}
-      ></div> */}
       <div className="pt-2" style={{ zIndex: 2 }}>
         <TextBox>
           <p className="text-white text-md text-center">
