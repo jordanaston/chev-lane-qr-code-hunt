@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import IntroBackground from "../../assets/Backgrounds/Intro-BG.png";
 import ChevLaneLogo from "../../assets/Logos/Chev-Lane-Wavey-Logo.png";
 import TextBox from "../../components/TextBox";
-import "../../Background.css";
 
 const Intro1: React.FC = () => {
   return (
