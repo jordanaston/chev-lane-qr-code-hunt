@@ -30,7 +30,7 @@ const Challenge2: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <div className="pt-2" style={{ zIndex: 2 }}>
+      <div className="pt-2 mt-10" style={{ zIndex: 2 }}>
         <TextBox>
           <p className="text-white text-md text-center">
             COMMUNITY TEXTILE ART INSTALLATION
@@ -83,7 +83,7 @@ const Challenge2: React.FC = () => {
         </TextBox>
       </div>
       <p
-        className="text-customBlack mb-7 text-xl mr-4 px-2"
+        className="text-customBlack mb-14 text-xl mr-4 px-2"
         style={{ zIndex: 2 }}
       >
         <Link
