@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TriviaBackground from "../../assets/Backgrounds/Trivia-BG.png";
-import TextBox from "../../components/TextBox";
-import JordFace from "../../assets/jord-face.png";
 
 const Trivia11: React.FC = () => {
   useEffect(() => {
@@ -19,9 +17,6 @@ const Trivia11: React.FC = () => {
       <Link to="/trivia10" className="text-white">
         ← BACK
       </Link>
-      <TextBox>
-        <img src={JordFace} alt="Jord Face" />
-      </TextBox>
     </div>
   );
 };

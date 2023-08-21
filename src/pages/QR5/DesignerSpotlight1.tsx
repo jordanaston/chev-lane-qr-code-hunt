@@ -61,7 +61,10 @@ const DesignerSpotlight1: React.FC = () => {
           <>
             <p className="mt-4 text-sm"># CLUE</p>
             <p className="mt-4 text-sm">
-              <Typewriter text="RAISE YOUR GAZE..." delay={40} />
+              <Typewriter
+                text="THE ANSWER LIES WITHIN THE FABRIC SCRAPS..."
+                delay={40}
+              />
             </p>
           </>
         ) : (

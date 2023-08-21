@@ -65,7 +65,7 @@ const Challenge2: React.FC = () => {
                 # CLUE <br />
                 <div className="uppercase">
                   <Typewriter
-                    text="Once finished, you can collect your reward from the Chev Lane team!"
+                    text="CONGRATS ON FINDING ALL 5 QR CODES! Once finished WITH THE ART INSTALLATION, you can collect your reward from the Chev Lane team!"
                     delay={40}
                   />
                   <br />
