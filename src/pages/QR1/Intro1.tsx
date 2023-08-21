@@ -36,7 +36,7 @@ const Intro1: React.FC = () => {
           reward AT THE END.
         </p>
         <p className="text-white mt-4 text-xs">
-          10-20mins to complete on average.
+          10-15 mins to complete on average.
         </p>
       </TextBox>
     </div>
