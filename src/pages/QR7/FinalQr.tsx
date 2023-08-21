@@ -29,6 +29,9 @@ const FinalQr: React.FC = () => {
           <span className="font-bold">SUSTAINABLE10</span>
           <br />
           <br />
+          Minimum Spend: $30
+          <br />
+          <br />
           Use online or in person.
           <br />
           <br />
