@@ -27,16 +27,15 @@ const FashionChelsea7: React.FC = () => {
             fashion budget wisely!
             <br />
             <br />
-            From purchasing items from op-shops and online marketplaces such as
-            Depop, to embracing practices like repairing, and supporting local
-            designers, there's a wide range of more ethical and sustainable
-            options available.
+            From purchasing from op-shops & online marketplaces such as Depop,
+            to embracing practices like repairing, & supporting local designers,
+            there's a wide range of more ethical & sustainable options
+            available.
             <br />
             <br />
-            Think about investing in higher-quality items that resonate with
-            you. While the initial expense might be greater, they provide
-            lasting value for both you and the makers, unlike fleeting
-            fast-fashion trends.
+            Consider investing in higher-quality items that resonate with you.
+            While the initial expense might be greater, they provide lasting
+            value for both you and the makers.
             <p className="text-customBlack text-sm text-justify">
               {revealClue ? (
                 <>

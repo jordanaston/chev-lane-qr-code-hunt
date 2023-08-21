@@ -13,7 +13,7 @@ const Intro1: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-screen bg-center bg-cover"
+      className="flex flex-col items-center justify-center w-full h-screen bg-center bg-cover text-justify"
       style={{ backgroundImage: `url(${IntroBackground})` }}
     >
       <img src={ChevLaneLogo} alt="Chev Lane Logo" className="w-72" />

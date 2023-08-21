@@ -25,18 +25,17 @@ const Trivia5: React.FC = () => {
         </p>
 
         <p className="text-white text-sm pb-2">
-          Fast fashion is a retail strategy known for quickly producing
-          inexpensive, trendy clothing, allowing retailers to quickly respond to
-          the latest fashion trends. <br />
+          Fast fashion is a retail strategy known for rapidly producing
+          inexpensive clothing, allowing retailers to respond to the latest
+          fashion trends. <br />
           <br />
-          This triggers frequent collection changes and promotes demand for
-          affordable, short-lived garments, resulting in environmental and
-          ethical worries, including labor exploitation and excess textile
-          waste.
+          This leads to frequent collection changes & demand for cheap,
+          short-lived garments, causing environmental & ethical concerns like
+          labor exploitation & textile waste.
           <br />
           <br />
-          It's worth noting that fast fashion largely dominates the offerings
-          within our Westfield shopping centers.
+          It's worth noting that fast fashion largely dominates our Westfield
+          shopping centres.
         </p>
       </TextBox>
 

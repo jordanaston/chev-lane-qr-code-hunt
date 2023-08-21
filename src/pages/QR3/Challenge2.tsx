@@ -40,48 +40,35 @@ const Challenge2: React.FC = () => {
       <div className="pb-2" style={{ zIndex: 2 }}>
         <TextBox>
           <p className="text-white text-md">
-            1. Choose a fabric scrap from our collection of off-cuts and
-            discarded pieces. Each piece has a story to tell and a chance to
-            live a longer life.
+            1. Choose a fabric scrap from our collection of off-cuts & discarded
+            pieces.
             <br />
             <br />
-            2. Use fabric paint and your creativity to doodle, draw, or share an
-            activism message on your fabric. Let your imagination flow as you
-            make your mark. Whether it's a simple squiggle or a powerful
-            message, your creation is a symbol of positive change.
+            2. Use fabric paint & your creativity to doodle, draw, or share an
+            activism message on your pieces of fabric. Whether it's a simple
+            squiggle or a powerful message, your creation is a symbol of
+            positive change.
             <br />
             <br />
-            3. Once done, we’ll give it a moment to dry then a team member will
-            hand-sew each patch onto others to craft a collective art piece.
+            3. Once done, we can give it a moment to dry, then a team member
+            will connect your patch onto the others to craft a collective art
+            piece.
             <br />
             <br />
             This community artwork embodies the spirit of collaboration and
-            mindful fashion. Your contribution WILL be a lasting reminder of the
-            impact we can make when we come together for a more sustainable
-            future.
-            <br />
-            <br />
-            Alright, enough of the SOPPY STUFF! GO HUNT DOWN THOSE QR CODES!
+            mindful fashion. Your contribution will be a lasting reminder of the
+            impact we can make when we come together.
             <br />
             <br />
             {revealClue ? (
               <>
                 # CLUE <br />
-                <div>
+                <div className="uppercase">
                   <Typewriter
-                    text="THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY."
+                    text="Once finished, you can collect your reward from the Chev Lane team!"
                     delay={40}
                   />
                   <br />
-                  <br />
-                  <Typewriter
-                    text="HINT: DENIM PATCHWORK..."
-                    delay={40}
-                    initialDelay={
-                      37 *
-                      "THE CODE IS HIDDEN WITHIN A TWO-WORD ACCESSORY.".length
-                    }
-                  />
                 </div>
               </>
             ) : (
@@ -111,7 +98,7 @@ const Challenge2: React.FC = () => {
             }, 100);
           }}
         >
-          ← Back
+          ← BACK
         </Link>
       </p>
     </div>

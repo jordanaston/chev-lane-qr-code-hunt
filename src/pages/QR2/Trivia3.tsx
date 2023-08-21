@@ -25,18 +25,17 @@ const Trivia3: React.FC = () => {
         </p>
 
         <p className="text-white text-sm pb-2">
-          Some brands highlight eco-friendly aspects of their business while
-          downplaying their harmful aspects, resulting in a deceptive overall
-          image. <br />
+          Often brands highlight eco-friendly aspects of their business while
+          downplaying their overall harmful aspects, resulting in a misleading
+          overall image. <br />
           <br />
-          This often diverts attention from negative aspects, like energy-usage
-          or large-scale production through the marketing of a supposedly
-          sustainable product.
+          Many well-known brands, like H&M, in 2011 have been accused of
+          greenwashing - where their sustainable efforts were contradicted by
+          their large overall impact.
           <br />
           <br />
-          Several well-known brands have faced accusations of green-washing. For
-          instance, in 2011, H&M faced criticism for its Conscious Collection
-          while their overall environmental impact remained high.
+          Luckily regulations are being imposed against greenwashing to promote
+          transparency and accountability in business practices.
         </p>
       </TextBox>
 
