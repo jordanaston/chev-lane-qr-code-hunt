@@ -40,11 +40,31 @@ const DesignerSpotlight1: React.FC = () => {
             revisit later after the hunt.
             <br />
           </p>
+          <p className="text-white text-md">
+            {revealClue ? (
+              <>
+                <p className="mt-4 text-sm"># CLUE</p>
+                <p className="mt-4 text-sm">
+                  <Typewriter
+                    text="THE ANSWER LIES WITHIN THE FABRIC SCRAPS..."
+                    delay={40}
+                  />
+                </p>
+              </>
+            ) : (
+              <button
+                className="border border-white mt-4 p-1 px-2"
+                onClick={() => setRevealClue(true)}
+              >
+                REVEAL NEXT CLUE!
+              </button>
+            )}
+          </p>
         </TextBox>
       </div>
 
       <p
-        className="text-white uppercase mt-4 text-lg border border-white p-1 px-2"
+        className="text-white uppercase mt-8 text-lg border border-white p-1 px-2"
         style={{ zIndex: 2 }}
       >
         <a
@@ -55,26 +75,6 @@ const DesignerSpotlight1: React.FC = () => {
         >
           Explore Designers →
         </a>
-      </p>
-      <p className="text-white text-lg text-justify">
-        {revealClue ? (
-          <>
-            <p className="mt-4 text-sm"># CLUE</p>
-            <p className="mt-4 text-sm">
-              <Typewriter
-                text="THE ANSWER LIES WITHIN THE FABRIC SCRAPS..."
-                delay={40}
-              />
-            </p>
-          </>
-        ) : (
-          <button
-            className="border border-white mt-4 p-1 px-2"
-            onClick={() => setRevealClue(true)}
-          >
-            REVEAL NEXT CLUE!
-          </button>
-        )}
       </p>
     </div>
   );

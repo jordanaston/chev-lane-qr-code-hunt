@@ -62,7 +62,7 @@ const Challenge2: React.FC = () => {
             <br />
             {revealClue ? (
               <>
-                # CLUE <br />
+                # CLUE <br /><br />
                 <div className="uppercase">
                   <Typewriter
                     text="CONGRATS ON FINDING ALL 5 QR CODES! Once finished WITH THE ART INSTALLATION, you can collect your reward from the Chev Lane team!"

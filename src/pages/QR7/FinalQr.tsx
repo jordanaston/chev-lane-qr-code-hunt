@@ -29,12 +29,10 @@ const FinalQr: React.FC = () => {
           <span className="font-bold">SUSTAINABLE10</span>
           <br />
           <br />
+          Use online or in person.
+          <br />
+          <br />
           Code expires on 1st Jan 2024. HINT: SCREENSHOT THIS PAGE!
-        </p>
-      </TextBox>
-      <TextBox>
-        <p className="text-white uppercase">
-          COLLECT YOUR 2ND SURPRISE FROM ANY CHEV LANE TEAM MEMBER!
         </p>
       </TextBox>
     </div>
