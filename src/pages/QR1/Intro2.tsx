@@ -19,7 +19,7 @@ const Intro2: React.FC = () => {
       <TextBox>
         <p className="text-white"># CLUE</p>
         <p className="text-white mt-4 mb-4">
-          <Typewriter text="BETWEEN THESE PAGES, A SECRET LIES..." delay={40} />
+          <Typewriter text="BETWEEN BONA'S PAGES, A SECRET LIES..." delay={40} />
         </p>
         <Link to="/" className="text-white pt-2">
           ← BACK
