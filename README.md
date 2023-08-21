@@ -1,11 +1,13 @@
 # An interactive and educational app for a local sustainable fashion/ art retailer. Built with React / Typescript / Tailwind CSS.
 
+<p align="center">
+   <img src="src/assets/Images/README-Image.png" width="500">
+</p>
 
-
-<img src="src/assets/Images/README-Image.png" width="1200">
 <br>
 
 ## To view web pages, access the QR codes below on mobile.
+
 <br>
 
 <p align="center">
